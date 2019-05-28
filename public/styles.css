@@ -1,0 +1,159 @@
+@import url('reset.css');
+
+body {
+	background-color: #E0E7EE;
+}
+
+.page {
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+#output {
+	height: 88vh;
+	padding: 30px;
+	box-sizing: border-box;
+	overflow-y: scroll;
+	padding-left: 0;
+	position: relative;
+	right: -30px; 
+}
+
+p {
+	margin: 0;
+}
+
+.name {
+	color: #9e9e9e;
+	font-size: 10pt;
+	margin: 30px 0 8px;
+}
+
+.message {
+	color: white;
+	background-color: #0A59F8;
+	width: fit-content;
+	padding: 8px 30px;
+	border-radius: 20px;
+	letter-spacing: .5px;
+}
+
+.input {
+	position: relative;
+	background-color: #15161C;
+	height: 12vh;
+	padding: 0 30px;
+}
+
+.controls {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+
+#handle, #message, #send {
+	font-size: 12pt;
+	color: #E0E7EE;
+	box-sizing: border-box;
+	border: 0;
+	outline: none;
+	height: 44px;
+	float: left;
+	padding: 0 30px;
+}
+
+#handle {
+	background-color: #2f2f3c;
+	width: 20%;
+	border-right: 1px solid #4a4a50;
+	border-radius: 4px 0 0 4px;
+}
+
+#message {
+	background-color: #2f2f3c;
+	width: calc(80% - 160px);
+}
+
+#send {
+	background-color: #0A59F8;
+	color: white;
+	width: 160px;
+	border-radius: 0 4px 4px 0;
+}
+
+#feedback {
+	color: #E0E7EE;
+    position: absolute;
+    top: 0;
+    font-size: 10pt;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+
+	#output {
+		height: 86vh;
+	}
+
+	.input {
+		height: 14vh;
+		padding: 0;
+		background-color: transparent;
+	}
+
+	.controls {
+		align-items: flex-end;
+	}
+
+	#handle, #message, #send {
+		height: 44pt;
+		border-radius: 0;
+		font-size: 10pt;
+		padding: 0 10px;
+	}
+
+	#handle {
+		background-color: #2f2f3c;
+		width: 23%;
+		border-right: 1px solid #4a4a50;
+	}
+
+	#message {
+		background-color: #2f2f3c;
+		width: calc(87% - 60pt);
+	}
+
+	#send {
+		width: 60pt;
+		padding: 0;
+	}
+
+	#feedback {
+		top: 8px;
+    	left: 10px;
+    	font-size: 8pt;
+    	color: #15161C;
+	}
+
+	.message {
+		padding: 8px 25px;
+		letter-spacing: 0;
+	}
+
+	input::placeholder {
+		color: #ffffff42;
+	}
+
+	
+
+}
+
+
+
+
+
+
+
+
+
